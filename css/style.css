@@ -172,9 +172,9 @@ textarea {
 }
 
 @media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -185,6 +185,7 @@ textarea {
    ========================================================================== */
 
 @media print {
+
   *,
   *::before,
   *::after {
@@ -245,3 +246,150 @@ textarea {
   }
 }
 
+/* Empezando el proyecto*/
+
+
+:root {
+  --color-blue: #515DEF;
+  --color-black: #333333;
+  --color-grey: #909090;
+  --color-white: #fbfbfb;
+  --font-primary: 'Poppins', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-blue);
+  font-family: var(--font-primary);
+  background-image: url(../img/iro-background@2x.jpg);
+  background-position: top right;
+  background-size: 40%;
+  background-repeat: no-repeat;
+}
+
+.container {
+  
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header.main-header {
+  margin-top: 33px;
+  padding-bottom: 33px;
+  display: flex;
+  align-items: center;
+  gap: 148px;
+  margin-bottom: 30px;
+}
+
+nav.main-nav {
+  width: 100%;
+}
+
+nav.main-nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 56px;
+  list-style: none;
+  align-items: center;
+}
+
+nav.main-nav ul li:last-child{
+  margin-left: auto;
+  
+}
+
+nav.main-nav ul li:last-child a{
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--color-blue);
+  text-decoration: none;
+}
+
+nav.main-nav ul li:last-child a:hover{
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+
+nav.main-nav a {
+  text-decoration: none;
+  font-weight: 300;
+  color: white;
+
+}
+
+nav.main-nav a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+section.hero {
+  width: 55%;
+  color: white;
+  margin-bottom: 80px;
+}
+
+.hero_initial {
+  font-weight: 300;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero_title {
+  font-size: 60px;
+  line-height: 1.2em;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.hero_subtitle {
+  font-weight: 300;
+  font-size: 22px;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.hero_button {
+  display: inline-block;
+  background-color: var(--color-white);
+  padding: 10px 12px;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--color-black);
+  display: inline-flex;
+  align-items: center;
+
+
+}
+
+section.categories {
+  width: 90%;
+  box-sizing: border-box; /* para que no se le sume el padding al tamaño*/
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  background-color: white;
+  padding: 30px 140px;
+  transform: translateX(-150px);
+}
+
+.category_icon {
+  width: 50px;
+}
+
+.category_title {
+  font-size: 18px;
+  color: var(--color-black);
+  font-weight: 500;
+}
+
+.category_description {
+  font-size: 14px;
+  color: var(--color-grey);
+  font-weight: 300;
+}
